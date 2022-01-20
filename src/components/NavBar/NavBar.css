@@ -29,3 +29,7 @@ nav {
 .seccionesNavegador:hover {
     cursor: pointer;
 }
+
+.imagenCarrito {
+    width: 25px;
+}

@@ -1,0 +1,31 @@
+header {
+    background-color: #E57723;
+    display: flex;
+    justify-content: space-between;
+    height: 75px;
+}
+
+.logo {
+    height: 150px;
+    margin: 10px 0 0 20px;
+    filter: drop-shadow(0 2px 5px rgba(0,0,0,0.7))
+}
+
+.logo:hover {
+    filter: drop-shadow(1px 3px 6px rgba(0,0,0,1));
+    cursor: pointer;
+}
+
+nav {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: auto 50px auto 0;
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.seccionesNavegador:hover {
+    cursor: pointer;
+}

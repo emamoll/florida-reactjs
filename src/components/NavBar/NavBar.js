@@ -1,6 +1,6 @@
 import './NavBar.css';
-import Logo from '../Img/logo.png'
-import Carrito from '../Img/shopping-cart-solid.svg'
+import Logo from "../../assets/logo.png"
+import Carrito from '../../assets/shopping-cart-solid.svg'
 
 const NavBar = () => {
     return (

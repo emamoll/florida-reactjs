@@ -1,6 +1,6 @@
 #contenedorContador {
     text-align: center;
-    margin-top: 250px;
+    margin-top: 60px;
     font-weight: bold;
     width: 200px;
     margin-left: 100px;
@@ -30,7 +30,7 @@
 #contenedorAgregar {
     display: none;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 1px;
     font-weight: bold;
     width: 200px;
     margin-left: 100px;
@@ -55,7 +55,7 @@
 #contenedorSinStock {
     display: none;
     text-align: center;
-    margin-top: 250px;
+    margin-top: 60px;
     font-weight: bold;
     width: 200px;
     height: 40px;
@@ -64,10 +64,11 @@
     color: black;
     backdrop-filter: blur(7px);
     background-color: #bea4907e;
-    position: fixed;
+    position:relative ;
     top: 0%;
     z-index: 1;
-    transform: rotate(-45deg)
+    transform: rotate(-45deg);
+    border: none;
 }
 
 #contenedorSinStock p {

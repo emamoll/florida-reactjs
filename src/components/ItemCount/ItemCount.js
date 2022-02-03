@@ -24,13 +24,7 @@ const ItemCount = ({stock}) => {
         setContador(contador + 1)
     }
 
-    if (contador === 9 ) {
-        document.getElementById('contenedorMensajeStock').style.display = 'block';
-        document.getElementById('contenedorSinStock').style.display = 'block';
-    } else {
-        document.getElementById('contenedorMensajeStock').style.display = 'none';
-        document.getElementById('contenedorSinStock').style.display = 'none';
-    }
+    
 
     return (
         <div>
@@ -42,17 +36,16 @@ const ItemCount = ({stock}) => {
                     <button className='botonContador' id='botonMas' onClick={sumarCantidad}>+</button>
                 </div>
             </div>
-            <div id='contenedorSinStock'>
+            <div id='contenedorSinStock'style={{display: contador === 9 ? 'block' : 'none' }}>
                 <p>SIN STOCK</p>
             </div> 
             <div id='contenedorAgregar'>
                 <button id='botonAgregar' onClick={agregarProducto}>Agregar Producto</button>
             </div>
-            <div id='contenedorMensajeStock'>
+            <div id='contenedorMensajeStock' style={{display: contador === 9 ? 'block' : 'none' }}>
                 <p>El stock de este producto es de {stock} unidades</p>
             </div>
         </div>
-         
         );
 }
 

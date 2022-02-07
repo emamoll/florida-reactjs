@@ -1,0 +1,9 @@
+{
+    "id": 36,
+    "nombre": "Sandwich de Miga Ternera y Verdura",
+    "precio": 850,
+    "medida": "doc",
+    "grid": "catGrid36",
+    "imagen": "src/assets/sandtyq.jpg",
+    "detalle": "Carne de primera calidad se mezcla con un pan de miga esponjoso, con nuestra mayonesa casera y un combinado de verduras que incluye tomate, aceitunas y huevo."
+}

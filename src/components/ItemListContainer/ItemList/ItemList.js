@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import './ItemList.css'
 import Item from '../Item/Item';
+import { Link } from 'react-router-dom';
 
 const ItemList = () => {
 
@@ -17,7 +18,10 @@ const ItemList = () => {
         {productos.map((producto) => {
             return (
                 <div key={producto.id}>
-                    <Item data={producto} />
+                    <Link to={`/detail/${producto.id}`} className='link'>
+                        <Item data={producto} />    
+                    </Link>
+                    
                 </div>
             )
         })}

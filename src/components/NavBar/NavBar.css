@@ -26,6 +26,11 @@ nav {
     font-weight: bold;
 }
 
+.seccionesNavegador {
+    color: black;
+    text-decoration: none;
+}
+
 .seccionesNavegador:hover {
     cursor: pointer;
 }

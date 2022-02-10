@@ -5,11 +5,11 @@ import Cargando from '../../Cargando/Cargando'
 
 const ItemDetail = () => {
 
-    const [datos,setDatos] = useState({});
+    const [datos, setDatos] = useState({});
     const [cargando, setCargando] = useState(true);
 
     useEffect(() => {
-        fetch('json/sandwich.json')
+        fetch(`json/productos.json`)
         .then((response) => response.json())
         .then((json) => setDatos(json));
         setTimeout(() => {
@@ -19,7 +19,11 @@ const ItemDetail = () => {
 
     return (
         <div className='contenedorDetalles'>
-           {cargando ? <Cargando /> : <Item datos={datos} />} 
+           {cargando ? (
+                <Cargando />
+            ) : (
+                    <Item datos={datos} />
+            )}
         </div>
     );
 };

@@ -5,7 +5,7 @@
         "precio": 150,
         "medida": "kg",
         "grid": "catGrid1",
-        "imagen": "src/assets/pan3.jpg"
+        "imagen": "assets/pan3.jpg"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "precio": 160,
         "medida": "kg",
         "grid": "catGrid2",
-        "imagen": "src/assets/pannegro.jpg"
+        "imagen": "assets/pannegro.jpg"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "precio": 150,
         "medida": "kg",
         "grid": "catGrid3",
-        "imagen": "src/assets/pan3.jpg"
+        "imagen": "assets/pan3.jpg"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "precio": 150,
         "medida": "kg",
         "grid": "catGrid4",
-        "imagen": "src/assets/pan3.jpg"
+        "imagen": "assets/pan3.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "precio": 150,
         "medida": "kg",
         "grid": "catGrid5",
-        "imagen": "src/assets/pan3.jpg"
+        "imagen": "assets/pan3.jpg"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "precio": 120,
         "medida": "doc",
         "grid": "catGrid6",
-        "imagen": "src/assets/viena.jpg"
+        "imagen": "assets/viena.jpg"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "precio": 120,
         "medida": "doc",
         "grid": "catGrid7",
-        "imagen": "src/assets/hamburguesa.jpg"
+        "imagen": "assets/hamburguesa.jpg"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "precio": 240,
         "medida": "kg",
         "grid": "catGrid8",
-        "imagen": "src/assets/criollo1.jpg"
+        "imagen": "assets/criollo1.jpg"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "precio": 260,
         "medida": "kg",
         "grid": "catGrid9",
-        "imagen": "src/assets/criollo4.jpg"
+        "imagen": "assets/criollo4.jpg"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "precio": 260,
         "medida": "kg",
         "grid": "catGrid10",
-        "imagen": "src/assets/chipaca2.jpg"
+        "imagen": "assets/chipaca2.jpg"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "precio": 460,
         "medida": "doc",
         "grid": "catGrid11",
-        "imagen": "src/assets/factura3.jpg"
+        "imagen": "assets/factura3.jpg"
     },
     {
         "id": 12,
@@ -93,7 +93,7 @@
         "precio": 480,
         "medida": "kg",
         "grid": "catGrid12",
-        "imagen": "src/assets/galleagua.jpg"
+        "imagen": "assets/galleagua.jpg"
     },
     {
         "id": 13,
@@ -101,7 +101,7 @@
         "precio": 480,
         "medida": "kg",
         "grid": "catGrid13",
-        "imagen": "src/assets/galleagua.jpg"
+        "imagen": "assets/galleagua.jpg"
     },
     {
         "id": 14,
@@ -109,7 +109,7 @@
         "precio": 480,
         "medida": "kg",
         "grid": "catGrid14",
-        "imagen": "src/assets/galleagua.jpg"
+        "imagen": "assets/galleagua.jpg"
     },
     {
         "id": 15,
@@ -117,7 +117,7 @@
         "precio": 620,
         "medida": "kg",
         "grid": "catGrid15",
-        "imagen": "src/assets/galleagua.jpg"
+        "imagen": "assets/galleagua.jpg"
     },
     {
         "id": 16,
@@ -125,7 +125,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid16",
-        "imagen": "src/assets/miel.jpg"
+        "imagen": "assets/miel.jpg"
     },
     {
         "id": 17,
@@ -133,7 +133,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid17",
-        "imagen": "src/assets/gallemarmolada.jpg"
+        "imagen": "assets/gallemarmolada.jpg"
     },
     {
         "id": 18,
@@ -141,7 +141,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid18",
-        "imagen": "src/assets/gallechoco.jpg"
+        "imagen": "assets/gallechoco.jpg"
     },
     {
         "id": 19,
@@ -149,7 +149,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid19",
-        "imagen": "src/assets/palmerita.jpg"
+        "imagen": "assets/palmerita.jpg"
     },
     {
         "id": 20,
@@ -157,7 +157,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid20",
-        "imagen": "src/assets/pepitas.jpg"
+        "imagen": "assets/pepitas.jpg"
     },
     {
         "id": 21,
@@ -165,7 +165,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid21",
-        "imagen": "src/assets/vainillones.jpg"
+        "imagen": "assets/vainillones.jpg"
     },
     {
         "id": 22,
@@ -173,7 +173,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid22",
-        "imagen": "src/assets/cañoncito.jpg"
+        "imagen": "assets/cañoncito.jpg"
     },
     {
         "id": 23,
@@ -181,7 +181,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid23",
-        "imagen": "src/assets/ojobuey.jpg"
+        "imagen": "assets/ojobuey.jpg"
     },
     {
         "id": 24,
@@ -189,7 +189,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid24",
-        "imagen": "src/assets/alfmaicena.jpg"
+        "imagen": "assets/alfmaicena.jpg"
     },
     {
         "id": 25,
@@ -197,7 +197,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid25",
-        "imagen": "src/assets/alfmaicena.jpg"
+        "imagen": "assets/alfmaicena.jpg"
     },
     {
         "id": 26,
@@ -205,7 +205,7 @@
         "precio": 800,
         "medida": "kg",
         "grid": "catGrid26",
-        "imagen": "src/assets/alfachoco.jpg"
+        "imagen": "assets/alfachoco.jpg"
     },
     {
         "id": 27,
@@ -213,7 +213,7 @@
         "precio": 750,
         "medida": "doc",
         "grid": "catGrid27",
-        "imagen": "src/assets/sanjyq.jpg"
+        "imagen": "assets/sanjyq.jpg"
     },
     {
         "id": 28,
@@ -221,7 +221,7 @@
         "precio": 750,
         "medida": "doc",
         "grid": "catGrid28",
-        "imagen": "src/assets/sandjyv.jpg"
+        "imagen": "assets/sandjyv.jpg"
     },
     {
         "id": 29,
@@ -229,7 +229,7 @@
         "precio": 750,
         "medida": "doc",
         "grid": "catGrid29",
-        "imagen": "src/assets/sandjyqn.jpg"
+        "imagen": "assets/sandjyqn.jpg"
     },
     {
         "id": 30,
@@ -237,7 +237,7 @@
         "precio": 750,
         "medida": "doc",
         "grid": "catGrid30",
-        "imagen": "src/assets/sanjyq.jpg"
+        "imagen": "assets/sanjyq.jpg"
     },
     {
         "id": 31,
@@ -245,7 +245,7 @@
         "precio": 750,
         "medida": "doc",
         "grid": "catGrid31",
-        "imagen": "src/assets/sanjyq.jpg"
+        "imagen": "assets/sanjyq.jpg"
     },
     {
         "id": 32,
@@ -253,7 +253,7 @@
         "precio": 850,
         "medida": "doc",
         "grid": "catGrid32",
-        "imagen": "src/assets/sanjyq.jpg"
+        "imagen": "assets/sanjyq.jpg"
     },
     {
         "id": 33,
@@ -261,7 +261,7 @@
         "precio": 850,
         "medida": "doc",
         "grid": "catGrid33",
-        "imagen": "src/assets/sanjyq.jpg"
+        "imagen": "assets/sanjyq.jpg"
     },
     {
         "id": 34,
@@ -269,7 +269,7 @@
         "precio": 950,
         "medida": "doc",
         "grid": "catGrid34",
-        "imagen": "src/assets/sanjyq.jpg"
+        "imagen": "assets/sanjyq.jpg"
     },
     {
         "id": 35,
@@ -277,7 +277,7 @@
         "precio": 850,
         "medida": "doc",
         "grid": "catGrid35",
-        "imagen": "src/assets/sandtyq.jpg"
+        "imagen": "assets/sandtyq.jpg"
     },
     {
         "id": 36,
@@ -285,7 +285,7 @@
         "precio": 850,
         "medida": "doc",
         "grid": "catGrid36",
-        "imagen": "src/assets/sandtyq.jpg"
+        "imagen": "assets/sandtyq.jpg"
     },
     {
         "id": 37,
@@ -293,7 +293,7 @@
         "precio": 850,
         "medida": "doc",
         "grid": "catGrid37",
-        "imagen": "src/assets/sandtyq.jpg"
+        "imagen": "assets/sandtyq.jpg"
     },
     {
         "id": 38,
@@ -301,7 +301,7 @@
         "precio": 850,
         "medida": "doc",
         "grid": "catGrid38",
-        "imagen": "src/assets/sandtyq.jpg"
+        "imagen": "assets/sandtyq.jpg"
     },
     {
         "id": 39,
@@ -309,7 +309,7 @@
         "precio": 850,
         "medida": "doc",
         "grid": "catGrid39",
-        "imagen": "src/assets/sandjyqn.jpg"
+        "imagen": "assets/sandjyqn.jpg"
     },
     {
         "id": 40,
@@ -317,7 +317,7 @@
         "precio": 750,
         "medida": "doc",
         "grid": "catGrid40",
-        "imagen": "src/assets/pebetejyq.jpg"
+        "imagen": "assets/pebetejyq.jpg"
     },
     {
         "id": 41,
@@ -325,7 +325,7 @@
         "precio": 750,
         "medida": "doc",
         "grid": "catGrid41",
-        "imagen": "src/assets/pebetesyq.jpg"
+        "imagen": "assets/pebetesyq.jpg"
     },
     {
         "id": 42,
@@ -333,7 +333,7 @@
         "precio": 950,
         "medida": "doc",
         "grid": "catGrid42",
-        "imagen": "src/assets/pebetetyq.jpg"
+        "imagen": "assets/pebetetyq.jpg"
     },
     {
         "id": 43,
@@ -341,7 +341,7 @@
         "precio": 950,
         "medida": "doc",
         "grid": "catGrid43",
-        "imagen": "src/assets/pebtebyqn.jpg"
+        "imagen": "assets/pebtebyqn.jpg"
     },
     {
         "id": 44,
@@ -349,7 +349,7 @@
         "precio": 950,
         "medida": "doc",
         "grid": "catGrid44",
-        "imagen": "src/assets/tortuguitatyq.jpg"
+        "imagen": "assets/tortuguitatyq.jpg"
     },
     {
         "id": 45,

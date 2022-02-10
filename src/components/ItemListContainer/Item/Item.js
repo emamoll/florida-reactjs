@@ -9,7 +9,7 @@ const Item = ({data}) => {
         <Card sx={{ maxWidth: 500 }} className="tarjetasCatalogo">
             <CardMedia
                 component="img"
-                height="140"
+                height="250"
                 image={data.imagen}
                 alt={data.nombre}
             />

@@ -3,6 +3,7 @@
     margin-right: 20px;
     border: 1px solid black;
     margin-bottom: 20px;
+    border-radius: 10%;
 }
 
 .tarjetasCatalogo:hover {

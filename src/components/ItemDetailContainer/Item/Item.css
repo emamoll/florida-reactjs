@@ -1,6 +1,52 @@
 .detalles {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "imagen titulo"
+                         "imagen precio"
+                         "imagen detalle"
+                         "imagen boton";
+}
+.grid1 {
+     grid-area: imagen;
+     border-radius: 10%;
+ }
+
+.grid2 {
+    grid-area: titulo;
+    text-align: center;
 }
 
+.grid3 {
+    grid-area: precio;
+    text-align: center;
+}
 
+.grid4 {
+    grid-area: detalle;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.grid5 {
+    grid-area: boton;
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E57723; 
+    border: none;
+    color: black;
+    padding: 6px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.grid5:hover {
+    filter: drop-shadow(1px 3px 6px rgba(0,0,0,1));
+    cursor: pointer;
+}

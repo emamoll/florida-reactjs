@@ -19,7 +19,7 @@ const ItemsDetail = () => {
     return (
         <div>
            <div>
-                   {item.filter((producto) => {
+                   {item.map((producto) => {
                        return (
                            <div key={producto.id}>
                                <ItemDetail datos={producto}/>

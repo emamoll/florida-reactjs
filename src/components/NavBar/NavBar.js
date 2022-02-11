@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom'
 const NavBar = () => {
     return (
         <header>
-            <Link to={'/productos'}>
+            <Link to={'/'}>
                 <img src={Logo} alt="Logo Florida" className="logo"/>
             </Link>
             <nav>
-                <Link to={'/productos'} className="seccionesNavegador">Productos</Link>|
+                <Link to={'/'} className="seccionesNavegador">Productos</Link>|
                 <Link to={'/favoritos'} className="seccionesNavegador">Favoritos</Link>|
                 <li className="seccionesNavegador">
                     <img src={Carrito} alt="Imagen Carrito" className="imagenCarrito"/>

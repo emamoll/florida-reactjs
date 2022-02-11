@@ -13,6 +13,8 @@ const ItemList = () => {
             .then((json) => setProductos(json));
     }, [])
 
+    
+
   return (
     <div className="catalogoGrid">
         {productos.map((producto) => {
@@ -28,7 +30,6 @@ const ItemList = () => {
 
     </div>
     )
-  
 };
 
 export default ItemList;

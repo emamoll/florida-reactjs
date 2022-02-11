@@ -3,7 +3,7 @@ import React from 'react';
 const Favoritos = () => {
     return (
         <div>
-            <p>No tiene ningún producto favorito</p>
+            <h1>No tiene ningún producto favorito</h1>
         </div>
     );
 };

@@ -3,7 +3,7 @@ import './ItemList.css'
 import Item from '../Item/Item';
 import { Link } from 'react-router-dom';
 
-const ItemList = () => {
+const ItemList = ({data}) => {
 
     const [productos, setProductos] = useState([]);
 

@@ -1,16 +1,18 @@
 import React from 'react';
+import './Buscar.css';
 import TextField from '@mui/material/TextField';
 
 
 const Buscar = () => {
   return (
-    <div>
-      <form  className='form'>
-        <TextField id="outlined-basic" label="Outlined" variant="outlined"/>
+    <div className='form'>
+      <form >
+        <TextField id="outlined-basic" label="Buscar producto" variant="outlined" />
         <button className='boton'>Buscar</button>
-      </form>  
+      </form> 
+      
     </div>
   )
-}
+};
 
 export default Buscar

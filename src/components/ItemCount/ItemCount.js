@@ -5,11 +5,6 @@ const ItemCount = ({stock}) => {
 
     const [contador, setContador] = useState(1);
 
-    if (contador <= 0) {
-        document.getElementById('contenedorContador').style.display = 'none';
-        document.getElementById('contenedorAgregar').style.display = 'block'
-    }
-
     const restarCantidad = () => {
         setContador(contador - 1);
     }
@@ -24,15 +19,12 @@ const ItemCount = ({stock}) => {
         setContador(contador + 1)
     }
 
-    
-
     return (
         <div>
             <div id='contenedorContador'>
-                <p className='tituloContador'>Cantidad del producto</p>
                 <div className='contenedorBotonesContador'>
-                    <button className='botonContador' id='botonMenos' onClick={restarCantidad}>-</button>
-                    <span id='numeroContador'>{contador}</span>
+                    <button className='botonContador' id='botonMenos' style={{display: contador === 1 ? 'none' : 'inline' }} onClick={restarCantidad}>-</button>
+                    <span style={{marginLeft: contador === 1 ? '50px' : '-45px' }} id='numeroContador'>{contador}</span>
                     <button className='botonContador' id='botonMas' onClick={sumarCantidad}>+</button>
                 </div>
             </div>

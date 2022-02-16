@@ -1,6 +1,10 @@
 .form {
-    margin-top: 100px;
-    margin-left: 50px;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1000px;
+	margin-left: 220px; 
+    margin-top: 50px;
 }
 
 .boton {
@@ -18,5 +22,10 @@
     font-weight: bold;
     border-radius: 20px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.boton:hover {
+    filter: drop-shadow(1px 3px 6px rgba(0,0,0,1));
+    cursor: pointer;
 }

@@ -4,6 +4,13 @@ import {Card, CardContent, CardMedia, Typography, IconButton} from '@mui/materia
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Item = ({data}) => {
+
+    const agregarAFavoritos = (e) => {
+        e.preventDefault();
+        document.getElementById('botonFavoritos').style.color = 'red'
+    }
+
+
   return (
     <div>
         <Card sx={{ maxWidth: 500 }} className="tarjetasCatalogo">
@@ -21,8 +28,8 @@ const Item = ({data}) => {
                 $ {data.precio} x {data.medida}
                 </Typography>
             </CardContent>
-            <IconButton aria-label="add to favorites">
-                <FavoriteIcon />
+            <IconButton className='contenedorBtnFav' onClick={agregarAFavoritos} aria-label="add to favorites">
+                <FavoriteIcon id='botonFavoritos'/>
             </IconButton>
         </Card>
     </div>

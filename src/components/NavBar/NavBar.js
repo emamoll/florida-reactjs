@@ -16,9 +16,9 @@ const NavBar = () => {
                 <Link to={'/buscar'} className="seccionesNavegador">
                     <img src={Lupa} alt="Imagen Lupa" className="imagenCarrito" />
                 </Link>|
-                <li className="seccionesNavegador">
+                <Link to={'/carrito'} className="seccionesNavegador">
                     <img src={Carrito} alt="Imagen Carrito" className="imagenCarrito"/>
-                </li>                
+                </Link>                
             </nav>
         </header>
     )

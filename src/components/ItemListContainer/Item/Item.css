@@ -13,4 +13,9 @@
 .contenedorBtnFav {
     position: absolute;
     z-index: 100;
+    color: white;
+}
+
+.favorito {
+    color: red;
 }

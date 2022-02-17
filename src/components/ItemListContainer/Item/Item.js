@@ -1,15 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Item.css';
 import {Card, CardContent, CardMedia, Typography, IconButton} from '@mui/material';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 
 const Item = ({data}) => {
 
-    const agregarAFavoritos = (e) => {
-        e.preventDefault();
-        document.getElementById('botonFavoritos').style.color = 'red'
-    }
+    const [seleccionar, setSeleccionar] = useState('')
 
+    const seleccionarFavorito = (e) => {
+        e.preventDefault();
+        (seleccionar === 'favorito') ? setSeleccionar('') : setSeleccionar('favorito');
+    } 
+    
 
   return (
     <div>
@@ -28,8 +30,8 @@ const Item = ({data}) => {
                 $ {data.precio} x {data.medida}
                 </Typography>
             </CardContent>
-            <IconButton className='contenedorBtnFav' onClick={agregarAFavoritos} aria-label="add to favorites">
-                <FavoriteIcon id='botonFavoritos'/>
+            <IconButton className='contenedorBtnFav' onClick={seleccionarFavorito} aria-label="add to favorites">
+                <FavoriteIcon className={seleccionar}/>
             </IconButton>
         </Card>
     </div>

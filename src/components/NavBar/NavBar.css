@@ -22,7 +22,7 @@ nav {
     justify-content: space-around;
     margin: auto 50px auto 0;
     list-style: none;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
 }
 
@@ -36,5 +36,15 @@ nav {
 }
 
 .imagenCarrito {
-    width: 25px;
+    width: 35px;
+}
+
+.cantidadCarrito {
+    font-size: medium;
+    color: #E57723;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 19px;
+    margin-right: 72px;
 }

@@ -1,0 +1,52 @@
+.contenedorItem {
+    display: grid;
+    grid-template-columns: 300px 550px 150px 300px 250px;
+    margin-top: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-top: 1px solid #e6e6e6;
+    padding-top: 30px;
+}
+
+.imgCarrito {
+    width: 100px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.nombreCarrito {
+    margin-left: -50px;
+}
+
+.precioCarrito {
+    margin-top: 10px;
+}
+
+.totalCarrito {
+    margin-top: 10px;
+}
+
+.botonesCarrito {
+    display: flex;
+    flex-direction: row;
+    margin-top: -30px;
+    margin-left: 300px;
+    width: 500px;
+}
+
+.btnEliminarCarrito {
+    background-color: white;
+    border: none;
+    color: blue;
+    cursor: pointer;
+}
+
+.btnAgregarCarrito {
+    background-color: white;
+    border: none;
+    color: blue;
+    margin-left: 70px;
+    cursor: pointer;
+}
+

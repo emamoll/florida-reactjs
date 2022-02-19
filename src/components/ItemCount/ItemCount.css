@@ -1,13 +1,13 @@
 #contenedorContador {
     grid-area: detalle;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
+    margin-left: 50px;
+    width: 150px;
 }
 
 .contenedorBotonesContador {
     border: 2px black solid;
+    border-radius: 15px;
     height: 40px;
     font-size: xx-large;
 }
@@ -20,6 +20,7 @@
 }
 
 #botonMenos {
+    margin-left: -20px;
     margin-right: 50px;
     width: 50px;
 }

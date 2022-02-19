@@ -9,6 +9,7 @@
 .grid1 {
      grid-area: imagen;
      border-radius: 10%;
+     min-width: 500px;
  }
 
 .grid2 {

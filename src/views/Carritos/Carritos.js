@@ -1,10 +1,10 @@
 import React from 'react';
-import './Carrito.css'
+import CarritoList from '../../components/CarritoContainer/CarritoList/CarritoList';
 
 const Carrito = () => {
   return (
     <div>
-        <h1>Su carrito esta vacio</h1>
+        <CarritoList />  
     </div>
   )
 }

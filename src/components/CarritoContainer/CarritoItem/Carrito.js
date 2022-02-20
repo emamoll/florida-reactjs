@@ -7,9 +7,8 @@ const Carrito = ({data}) => {
 
   const [items, setItems] = useContext(CartContext);
   const eliminarItem = (e) => {
-    console.log(e.target.value);
+    console.log(items);
   }
-  console.log(items);
 
   return (
     <div className='contenedorItem'>
@@ -19,7 +18,7 @@ const Carrito = ({data}) => {
         <ItemCount className="contadorCarrito" />
         <h2 className='totalCarrito'>$ {data.precio}</h2>
         <div className='botonesCarrito'>
-            <button className='btnEliminarCarrito' onClick={() => eliminarItem()} >Eliminar</button>
+            <button className='btnEliminarCarrito' id={data.id} onClick={eliminarItem} >Eliminar</button>
             <button className='btnAgregarCarrito' >Agregar a Favoritos</button>
         </div>
     </div>

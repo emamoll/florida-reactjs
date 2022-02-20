@@ -9,7 +9,7 @@ const itemsCarrito = [
     { id: 27, nombre: "Sandwich de Miga Jamón y Queso", precio: 750, medida: "doc", imagen: "assets/sanjyq.jpg" },
     { id: 39, nombre: "Sandwich de Miga Bondiola y Queso (Negro)", precio: 850, medida: "doc", imagen: "assets/sandjyqn.jpg" },
     { id: 42, nombre: "Pebete de Ternera y Queso", precio: 950, medida: "doc", imagen: "assets/pebetetyq.jpg" },
-    { id: 45, nombre: "Tortuguita de Ternera y Verdura", precio: 950, medida: "doc", imagen: "src/assets/tortuguitatyv.jpg" }
+    { id: 45, nombre: "Tortuguita de Ternera y Verdura", precio: 950, medida: "doc", imagen: "assets/tortuguitatyv.jpg" }
 ]
 
 export const ItemsProvider = ( {children} ) => {

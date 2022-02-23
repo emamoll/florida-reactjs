@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import './CarritoList.css';
 import Carrito from '../CarritoItem/Carrito';
-import { CartContext } from '../../CartContext/CartContext';
+import { CartContext } from '../../../Context/CartContext/CartContext';
 
-const CarritoList = () => {
+const CarritoList = ( {data} ) => {
 
-  const [items, setItems] = useContext(CartContext);
+  const [items, setItems, removeItem] = useContext(CartContext);
 
   return (
     <div>
@@ -21,7 +21,7 @@ const CarritoList = () => {
               <h2 className='totalCarrito'>Total de la compra</h2>
               <h2>$1600</h2>
             </div>
-            <button className='btnVaciar' onClick={() => setItems([])} style={{ display: (items.length) === 0 ? 'none' : 'block' }}>Vaciar carrito</button>
+            <button className='btnVaciar' onClick={() => removeItem()} style={{ display: (items.length) === 0 ? 'none' : 'block' }}>Vaciar carrito</button>
           </> : <h2 className='carritoVacio'>Su carrito esta vacio</h2> }
         
     </div>

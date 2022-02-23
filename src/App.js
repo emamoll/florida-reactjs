@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from'./components/NavBar/NavBar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ItemsProvider } from './components/CartContext/CartContext';
+import { ItemsProvider } from './Context/CartContext/CartContext';
 import Productos from './views/Productos/Productos';
 import Favoritos from './views/Favoritos/Favoritos';
 import Buscar from './views/Buscar/Buscar'

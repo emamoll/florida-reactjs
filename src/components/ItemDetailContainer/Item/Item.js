@@ -1,15 +1,11 @@
-import React from 'react';
-import {useNavigate} from 'react-router-dom';
+import React, { useContext } from 'react';
 import './Item.css';
+import { CartContext } from '../../../Context/CartContext/CartContext';
 
 const Item = ({datos}) => {
 
-    const navegar = useNavigate()
-
-    const agregarAlCarrito = () => {
-        navegar("/carrito")
-    }
-
+    const [items, setItems, addItem] = useContext(CartContext);
+    
 
     return (
         <div className='detalles'>
@@ -17,7 +13,7 @@ const Item = ({datos}) => {
             <h1 className='grid2' >{datos.nombre}</h1>
             <h2 className='grid3' >$ {datos.precio} x {datos.medida}</h2>
             {/* <h3 className='grid4' >{datos.detalle}</h3> */}
-            <button className='grid5' onClick={agregarAlCarrito}>Agregar al carrito</button>
+            <button className='grid5' onClick={() => addItem(datos.id)}>Agregar al carrito</button>
         </div>
     );
 };

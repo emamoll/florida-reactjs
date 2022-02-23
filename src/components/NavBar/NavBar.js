@@ -4,11 +4,11 @@ import Logo from "../../assets/logo.png";
 import Carrito from '../../assets/shopping-cart-solid.svg';
 import Lupa from '../../assets/lupa-icon.png';
 import { Link } from 'react-router-dom';
-import { CartContext } from '../CartContext/CartContext';
+import { CartContext } from '../../Context/CartContext/CartContext';
 
 const NavBar = () => {
 
-    const [items, setItems] = useContext(CartContext)
+    const [items] = useContext(CartContext)
 
     return (
         <header>

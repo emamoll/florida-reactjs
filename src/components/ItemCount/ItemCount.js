@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './ItemCount.css';
 
-const ItemCount = ({stock}) => {
+const ItemCount = ({data}) => {
 
     const [contador, setContador] = useState(1);
 
@@ -35,7 +35,7 @@ const ItemCount = ({stock}) => {
                 <button id='botonAgregar' onClick={agregarProducto}>Agregar Producto</button>
             </div>
             <div id='contenedorMensajeStock' style={{display: contador === 9 ? 'block' : 'none' }}>
-                <p>El stock de este producto es de {stock} unidades</p>
+                <p>El stock de este producto es de  unidades</p>
             </div>
         </div>
         );

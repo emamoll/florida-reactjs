@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import ItemDetail from '../../components/ItemDetailContainer/ItemDetail/ItemDetail';
 import Cargando from '../../components/Cargando/Cargando'
+/*import { collection, query, getDocs } from 'firebase/firestore';
+import { db } from '../../Firebase/FirebaseConfig'*/
+
 
 
 
@@ -22,7 +25,23 @@ const ItemsDetail = ({datos}) => {
           setTimeout(() => {
             setCargando(false);
         }, 2000);
-      }, [itemId]); 
+      }, [itemId]);
+      
+    /*useEffect(() => {
+        const detallesProductos = async () => {
+            const q = query(collection(db, 'productos'));
+            const docs = [];
+            const querySnapshot = await getDocs(q);
+            querySnapshot.forEach((doc) => {
+                docs.push({...doc.data(), id: doc.id})
+            });
+            setItem(docs.filter((producto) => producto.id === parseInt(itemId)));
+        };
+        setTimeout(() => {
+                setCargando(false);
+            }, 2000);
+        detallesProductos()
+    }, [itemId])*/
 
     return (
         <div>

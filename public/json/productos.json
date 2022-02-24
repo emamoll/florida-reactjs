@@ -13,7 +13,8 @@
         "precio": 160,
         "medida": "kg",
         "grid": "catGrid2",
-        "imagen": "assets/pannegro.jpg"
+        "imagen": "assets/pannegro.jpg",
+        "stock": 8
     },
     {
         "id": 3,

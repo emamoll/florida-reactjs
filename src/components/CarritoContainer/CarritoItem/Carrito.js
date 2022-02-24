@@ -1,23 +1,27 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import './Carrito.css';
 import ItemCount from '../../ItemCount/ItemCount'
 import { CartContext } from '../../../Context/CartContext/CartContext';
 
-const Carrito = () => {
 
-  const [items, setItems] = useContext(CartContext);
-  console.log(items);
+const Carrito = ({ data }) => {
 
+  const [items, setItems, removeItem] = useContext(CartContext);
+
+  const [subTotal, setSubtotal] = useState(0)
 
   return (
-    <div className='contenedorItem'>
-        <img src={items.imagen} alt={items.nombre} className='imgCarrito'/>
-        <h2 className='nombreCarrito' >{items.nombre}</h2>
-        <h3 className='precioCarrito' >$ {items.precio} x {items.medida}</h3>
-        <ItemCount className="contadorCarrito" />
-        <h2 className='totalCarrito'>$ {items.precio}</h2>
+  <div className='contenedorItem'>
+        <img src={data.imagen} alt={data.nombre} className='imgCarrito'/>
+        <h2 className='nombreCarrito' >{data.nombre}</h2>
+        <h3 className='precioCarrito' >$ {data.precio} x {data.medida}</h3>
+        <div>
+          <p className='stockCarrito'>Cantidad disponible:{data.stock}</p>
+          <ItemCount />
+        </div>
+        <h2 className='totalCarrito'>$ {subTotal}</h2>
         <div className='botonesCarrito'>
-            <button className='btnEliminarCarrito' id={items.id} >Eliminar</button>
+            <button className='btnEliminarCarrito' onClick={() => removeItem(data) } key={data.id} >Eliminar</button>
             <button className='btnAgregarCarrito' >Agregar a Favoritos</button>
         </div>
     </div>

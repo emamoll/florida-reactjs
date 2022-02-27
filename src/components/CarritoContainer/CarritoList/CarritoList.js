@@ -22,7 +22,9 @@ const CarritoList = ( {data} ) => {
               <h2>$1600</h2>
             </div>
             <button className='btnVaciar' onClick={() => setItems([])} style={{ display: (items.length) === 0 ? 'none' : 'block' }}>Vaciar carrito</button>
-          </> : <h2 className='carritoVacio'>Su carrito esta vacio</h2> }
+          </> : 
+          <h2 className='carritoVacio'>Su carrito esta vacio</h2> 
+        }
         
     </div>
   )

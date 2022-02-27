@@ -2,11 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import ItemDetail from '../../components/ItemDetailContainer/ItemDetail/ItemDetail';
 import Cargando from '../../components/Cargando/Cargando'
-/*import { collection, query, getDocs } from 'firebase/firestore';
-import { db } from '../../Firebase/FirebaseConfig'*/
-
-
-
+import { collection, query, getDocs } from 'firebase/firestore';
+import { db } from '../../Firebase/FirebaseConfig'
 
 const ItemsDetail = ({datos}) => {
 
@@ -15,19 +12,8 @@ const ItemsDetail = ({datos}) => {
 
     let id = useParams();
     let itemId = id.id;
-
-    useEffect(() => {
-        fetch("../json/productos.json")
-          .then((response) => response.json())
-          .then((json) => {
-            setItem(json.filter((producto) => producto.id === parseInt(itemId)));
-          });
-          setTimeout(() => {
-            setCargando(false);
-        }, 2000);
-      }, [itemId]);
       
-    /*useEffect(() => {
+    useEffect(() => {
         const detallesProductos = async () => {
             const q = query(collection(db, 'productos'));
             const docs = [];
@@ -35,13 +21,14 @@ const ItemsDetail = ({datos}) => {
             querySnapshot.forEach((doc) => {
                 docs.push({...doc.data(), id: doc.id})
             });
-            setItem(docs.filter((producto) => producto.id === parseInt(itemId)));
+            setItem(docs.filter((producto) => producto.id === itemId)); 
         };
         setTimeout(() => {
                 setCargando(false);
             }, 2000);
         detallesProductos()
-    }, [itemId])*/
+    }, [itemId])
+    console.log(itemId);
 
     return (
         <div>

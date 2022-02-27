@@ -9,17 +9,17 @@ export const ItemsProvider = ( {children} ) => {
         return items.some((producto) => producto.id === productoId);
       };
     
-      const addItem = (producto) => {
+    const addItem = (producto) => {
         if (!isInCart(producto.id)) {
             setItems([...items, producto])
         }
     }
-
-    const removeItem = () => {
-        console.log('click');
+    
+    const removeItem = (productoId) => {
+       const productoEliminado = items.filter((producto) => producto.id !== productoId.id);
+       setItems(productoEliminado);
     }
-    
-    
+   
     return (
         <CartContext.Provider value={[items, setItems, addItem, removeItem]}>
             {children}

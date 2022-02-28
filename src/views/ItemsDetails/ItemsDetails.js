@@ -28,7 +28,6 @@ const ItemsDetail = ({datos}) => {
             }, 2000);
         detallesProductos()
     }, [itemId])
-    console.log(itemId);
 
     return (
         <div>

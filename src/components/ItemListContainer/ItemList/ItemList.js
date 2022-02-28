@@ -21,6 +21,7 @@ const ItemList = ({data}) => {
         };
         catalogoProductos()
     }, [])
+    
     return (
     <div className="catalogoGrid">
         {productos.map((producto) => {

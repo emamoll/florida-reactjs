@@ -1,11 +1,10 @@
 import React from 'react';
-import FavoritoList from '../../components/FavoritoContainer/FavoritoList/FavoritoList';
 
 
 const Favoritos = () => {
     return (
         <div>
-            <FavoritoList />
+            <h1>Tus Favoritos</h1>
         </div>
     );
 };

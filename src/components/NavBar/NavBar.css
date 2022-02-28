@@ -20,15 +20,19 @@ nav {
     width: 500px;
     display: flex;
     justify-content: space-around;
-    margin: auto 50px auto 0;
+    margin: 20px 100px auto 0;
     list-style: none;
-    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
     font-weight: bold;
 }
 
 .seccionesNavegador {
     color: black;
     text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
 }
 
 .seccionesNavegador:hover {
@@ -37,6 +41,8 @@ nav {
 
 .imagenCarrito {
     width: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .cantidadCarrito {
@@ -45,6 +51,6 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
-    margin-top: 19px;
-    margin-right: 69px;
+    margin-top: 23px;
+    margin-right: 49px;
 }

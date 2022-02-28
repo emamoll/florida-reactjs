@@ -1,0 +1,21 @@
+.formularioCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.inputFormulario {
+    margin-top: 10px;
+}
+
+.boton {
+    margin-top: 20px;
+}

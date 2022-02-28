@@ -1,0 +1,19 @@
+#fade-button {
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -13px;
+}
+
+#fade-button:hover {
+    background-color: #E57723;
+}
+
+.menuItem {
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}

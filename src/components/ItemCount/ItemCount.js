@@ -24,7 +24,7 @@ const ItemCount = ( {data} ) => {
             <div id='contenedorContador'>
                 <div className='contenedorBotonesContador'>
                     <button className='botonContador' id='botonMenos' style={{display: contador === 1 ? 'none' : 'inline' }} onClick={restarCantidad}>-</button>
-                    <span style={{marginLeft: contador === 1 ? '40px' : '-45px' }} id='numeroContador' data={contador}>{contador}</span>
+                    <span style={{marginLeft: contador === 1 ? '40px' : '-45px' }} id='numeroContador'>{contador}</span>
                     <button className='botonContador' id='botonMas' onClick={sumarCantidad}>+</button>
                 </div>
             </div>

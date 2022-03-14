@@ -1,24 +1,17 @@
-import React, { useContext, useState } from 'react';
-import './Item.css';
-import {Card, CardContent, CardMedia, Typography, IconButton} from '@mui/material';
-import FavoriteIcon from '@mui/icons-material/Favorite';
+import React, { useContext } from 'react';
+import './FavoritoDetail.css'
+import {Card, CardContent, CardMedia, Typography} from '@mui/material';
 import { FavContext } from '../../../Context/CartContext/FavContext';
+import TarroBasura from '../../../assets/basura.png'
 
-const Item = ({data}) => {
-
-    const [seleccionar, setSeleccionar] = useState('')
-    
+const FavoritoDetail = ({data}) => {    
     const valueFav = useContext(FavContext);
-    const addFav = valueFav.addFav;
+    const removeFav = valueFav.removeFav;
 
-     const seleccionarFavorito = (e) => {
+    const eliminarFavorito = (e) => {
         e.preventDefault();
-        if(setSeleccionar('favorito')) {
-            setSeleccionar('')
-        }
-        addFav(data.id)
-    }  
-    
+        removeFav(data);
+    }
    
 
   return (
@@ -38,15 +31,13 @@ const Item = ({data}) => {
                 $ {data.precio} x {data.medida}
                 </Typography>
             </CardContent>
-            <IconButton className='contenedorBtnFav' onClick={seleccionarFavorito} aria-label="add to favorites">
-                <FavoriteIcon className={seleccionar}/>
-            </IconButton>
+            <button className='botonBasura' onClick={eliminarFavorito}>
+                <img src={TarroBasura} alt='tarro de basura' className='imagenBasura'/>
+            </button>
+            
         </Card>
     </div>
     );
 };
 
-export default Item;
-
-
-                    
+export default FavoritoDetail;

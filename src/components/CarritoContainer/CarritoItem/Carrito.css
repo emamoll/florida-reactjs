@@ -55,3 +55,88 @@
     cursor: pointer;
 }
 
+#contenedorContador {
+    grid-area: detalle;
+    text-align: center;
+    margin-left: 50px;
+    width: 180px;
+}
+
+.contenedorBotonesContador {
+    border: 2px black solid;
+    border-radius: 15px;
+    height: 40px;
+    font-size: xx-large;
+}
+
+.botonContador{
+    border: none;
+    cursor: pointer;
+    font-size: xx-large;
+    background-color: white;
+}
+
+#botonMenos {
+    margin-left: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+#botonMas {
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.botonContador:hover {
+    filter: drop-shadow(1px 3px 6px rgb(124, 118, 118));
+    cursor: pointer;
+}
+
+#contenedorAgregar {
+    display: none;
+    text-align: center;
+    margin-top: 1px;
+    font-weight: bold;
+    width: 200px;
+    margin-left: 100px;
+}
+
+#contenedorMensajeStock {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    width: 300px;
+    margin-top: -44px;
+    margin-left: 150px;
+    border: 2px black solid;
+    background-color: brown;
+    color: white;
+    position: relative;
+    top: 0%;
+    z-index: 1;
+    height: 40px;
+}
+
+#contenedorSinStock {
+    display: none;
+    text-align: center;
+    margin-top: 60px;
+    font-weight: bold;
+    width: 200px;
+    height: 40px;
+    margin-left: 100px;
+    border: 2px black solid;
+    color: black;
+    backdrop-filter: blur(7px);
+    background-color: #bea4907e;
+    position:relative ;
+    top: 0%;
+    z-index: 1;
+    transform: rotate(-45deg);
+    border: none;
+}
+
+#contenedorSinStock p {
+    margin-top: 10px;
+    
+}

@@ -1,0 +1,20 @@
+.imagenBasura{
+    width: 30px;
+    background-color: white;
+    border: none;
+}
+
+.botonBasura{
+    background-color: white;
+    border: none;
+}
+
+.imagenBasura:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}
+
+.botonBasura:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+}

@@ -1,10 +1,10 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext, useState} from 'react';
 import './FormularioContainer.css'
 import TextField from '@mui/material/TextField';
 import { addDoc, collection } from 'firebase/firestore';
 import { db } from '../../Firebase/FirebaseConfig';
 import MensajeCompra from '../MensajeCompra/MensajeCompra';
-import { CartContext } from '../../Context/CartContext/CartContext';
+import { StateContext } from '../../Context/Provider/StateProvider';
 
 
 
@@ -20,7 +20,8 @@ const initialState = {
 const FormularioContainer = () => {
 
   const [datos, setDatos] = useState(initialState);
-  const [items, setItems] = useContext(CartContext);
+  const value = useContext(StateContext)
+  const [carrito, setCarrito] = value.carrito;
 
   const [compraId, setCompraId] = useState('')
 
@@ -36,7 +37,7 @@ const FormularioContainer = () => {
     })
     setCompraId(docRef.id);
     setDatos(initialState);
-    setItems([])
+    setCarrito([])
   }
 
   return (

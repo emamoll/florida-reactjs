@@ -1,16 +1,17 @@
 .form {
     display: flex;
 	justify-content: center;
-	align-items: center;
 	width: 1000px;
 	margin-left: 220px; 
     margin-top: 50px;
 }
 
-.boton {
+
+.botonBuscar {
     width: 200px;
     height: 50px;
-    margin-left: auto;
+    margin-top: 3px;
+    margin-left: 20px;
     margin-right: auto;
     background-color: #E57723; 
     border: none;
@@ -22,10 +23,16 @@
     font-weight: bold;
     border-radius: 20px;
     cursor: pointer;
-    margin-left: 20px;
 }
 
-.boton:hover {
+.botonBuscar:hover {
     filter: drop-shadow(1px 3px 6px rgba(0,0,0,1));
     cursor: pointer;
+}
+
+.buscarVacio {
+    grid-column-start: 0;
+    grid-column-end: 3;
+    margin-top: 70px;
+    color: #bbacac;
 }

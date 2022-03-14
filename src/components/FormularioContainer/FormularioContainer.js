@@ -6,8 +6,6 @@ import { db } from '../../Firebase/FirebaseConfig';
 import MensajeCompra from '../MensajeCompra/MensajeCompra';
 import { StateContext } from '../../Context/Provider/StateProvider';
 
-
-
 const initialState = {
   nombre: '',
   apellido: '',
@@ -21,7 +19,7 @@ const FormularioContainer = () => {
 
   const [datos, setDatos] = useState(initialState);
   const value = useContext(StateContext)
-  const [carrito, setCarrito] = value.carrito;
+  const [carrito ,setCarrito] = value.carrito;
 
   const [compraId, setCompraId] = useState('')
 
@@ -35,13 +33,15 @@ const FormularioContainer = () => {
     const docRef = await addDoc(collection(db, 'compras'), {
       datos
     })
+    document.getElementById('formularioCont').style.display = 'none'
     setCompraId(docRef.id);
     setDatos(initialState);
     setCarrito([])
   }
 
   return (
-    <div className='formularioCont'>
+    <div>
+      <div id='formularioCont'>
       <h2>Complete con sus datos para finalizar su compra</h2>
       <form className='formulario' onSubmit={enviar}>
         <TextField id="outlined-basic" 
@@ -58,11 +58,13 @@ const FormularioContainer = () => {
         onChange={valorIngresado}/>
         <TextField id="outlined-basic" label="Telefono" variant="outlined" 
         className='inputFormulario'
+        type='number'
         name='telefono'
         value={datos.telefono}
         onChange={valorIngresado}/>
         <TextField id="outlined-basic" label="Email" variant="outlined" 
         className='inputFormulario'
+        type='email'
         name='email'
         value={datos.email}
         onChange={valorIngresado}/>
@@ -72,18 +74,16 @@ const FormularioContainer = () => {
         value={datos.ciudad}
         onChange={valorIngresado}/>
 
-        <button className='boton'>Buscar</button>
+        <button className='boton'>Enviar</button>
       </form>
+      </div>
+      
 
-    <div>
       <div>
-        {compraId && <MensajeCompra compraId={compraId} /> }
+        <div>
+          {compraId && <MensajeCompra compraId={compraId} /> }
       </div>
     </div>
-
-
-
-
     </div>
   )
 }

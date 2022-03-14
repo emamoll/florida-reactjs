@@ -12,7 +12,6 @@ const FavoritoDetail = ({data}) => {
         e.preventDefault();
         removeFav(data);
     }
-   
 
   return (
     <div>
@@ -33,8 +32,7 @@ const FavoritoDetail = ({data}) => {
             </CardContent>
             <button className='botonBasura' onClick={eliminarFavorito}>
                 <img src={TarroBasura} alt='tarro de basura' className='imagenBasura'/>
-            </button>
-            
+            </button>        
         </Card>
     </div>
     );

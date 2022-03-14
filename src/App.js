@@ -11,9 +11,6 @@ import Formulario from './views/Formulario/Formulario';
 import { StateProvider } from './Context/Provider/StateProvider';
 import { FavProvider } from './Context/CartContext/FavContext';
 
-
-
-
 function App() {
     return (
       <Router>

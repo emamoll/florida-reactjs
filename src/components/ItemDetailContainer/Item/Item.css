@@ -1,38 +1,45 @@
 .detalles {
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "imagen titulo"
                          "imagen precio"
                          "imagen detalle"
                          "imagen boton";
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: rgb(252, 232, 232);
 }
 .grid1 {
      grid-area: imagen;
      border-radius: 10%;
      min-width: 500px;
+     margin-left: 80px;
  }
 
 .grid2 {
+    margin-top: 20px;
     grid-area: titulo;
     text-align: center;
+    font-size: 50px;
 }
 
 .grid3 {
+    margin-top: 80px;
     grid-area: precio;
     text-align: center;
+    font-size: 30px;
 }
 
-.grid4 {
-    grid-area: detalle;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-
-.grid5 {
+.grid4 {  
     grid-area: boton;
     width: 200px;
     height: 50px;
+    margin-top: -180px;
     margin-left: auto;
     margin-right: auto;
     background-color: #E57723; 
@@ -47,7 +54,7 @@
     cursor: pointer;
 }
 
-.grid5:hover {
+.grid4:hover {
     filter: drop-shadow(1px 3px 6px rgba(0,0,0,1));
     cursor: pointer;
 }

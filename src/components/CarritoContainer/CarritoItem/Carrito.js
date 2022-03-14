@@ -3,8 +3,6 @@ import { FavContext } from '../../../Context/CartContext/FavContext';
 import { StateContext } from '../../../Context/Provider/StateProvider';
 import './Carrito.css';
 
-
-
 const Carrito = ({ data }) => {
 
   const value = useContext(StateContext);
@@ -48,10 +46,7 @@ const Carrito = ({ data }) => {
           <p className='stockCarrito'>
             Cantidad disponible: {restaStock === 0 ? 'sin stock' : `${restaStock} ${data.medida}`}
           </p>  
-            
-            
-           
-          <div id='contenedorContador'>
+           <div id='contenedorContador'>
                 <div className='contenedorBotonesContador'>
                     <button className='botonContador' id='botonMenos' onClick={() => restarCantidad(data.id)}>-</button>
                     <span id='numeroContador' style={{marginRight:(restaStock === 0) ? '35px' : '0'}} >{data.cantidad}</span>

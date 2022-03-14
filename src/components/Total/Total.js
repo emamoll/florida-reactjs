@@ -11,7 +11,6 @@ const Total = () => {
 
     const navigate = useNavigate();
 
-
     const comprar = () => {
       document.getElementById('ventanaConfirmacion').style.display = 'block'
     }

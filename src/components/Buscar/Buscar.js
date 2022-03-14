@@ -7,9 +7,6 @@ import { db } from '../../Firebase/FirebaseConfig';
 import { Link } from 'react-router-dom';
 import Item from '../ItemListContainer/Item/Item';
 
-
-
-
 const Buscar = () => {
 
   const [productos, setProductos] = useState([]);
@@ -46,9 +43,6 @@ const Buscar = () => {
     })
     setEncotrado(resultadoBusqueda)
   }
-
-
-  
 
   return (
     <div>

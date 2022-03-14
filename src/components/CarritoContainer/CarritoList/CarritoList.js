@@ -4,15 +4,13 @@ import Carrito from '../CarritoItem/Carrito';
 import Total from '../../Total/Total';
 import { StateContext } from '../../../Context/Provider/StateProvider';
 
-
-
 const CarritoList = ( {data} ) => {
   const value = useContext(StateContext)
     const [carrito] = value.carrito
 
   return (
     <div>
-        <h1>Tu Carrito</h1>
+        <h1 className='titulo'>Tu Carrito</h1>
         
         {carrito.map((item) => {
           return <Carrito data={item} key={item.id} />

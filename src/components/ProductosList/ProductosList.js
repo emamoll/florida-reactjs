@@ -5,7 +5,6 @@ import { db } from '../../Firebase/FirebaseConfig'
 import { Link, useParams } from 'react-router-dom';
 import Item from '../ItemListContainer/Item/Item';
 
-
 const ProductosList = () => {
 
     const [categorias, setCategorias] = useState([]);

@@ -4,10 +4,12 @@ import Item from '../Item/Item';
 import { Link } from 'react-router-dom';
 import { collection, query, getDocs } from 'firebase/firestore';
 import { db } from '../../../Firebase/FirebaseConfig'
+import Espera from '../../EsperaList/EsperaList';
 
 const ItemList = ({data}) => {
 
     const [productos, setProductos] = useState([]);
+    const [esperando, setEsperando] = useState(true)
 
     useEffect(() => {
         const catalogoProductos = async () => {
@@ -19,6 +21,9 @@ const ItemList = ({data}) => {
             });
             setProductos(docs);
         };
+        setTimeout(() => {
+            setEsperando(false)
+        }, 2500);
         catalogoProductos()
     }, [])
     
@@ -27,10 +32,13 @@ const ItemList = ({data}) => {
         {productos.map((producto) => {
             return (
                 <div key={producto.id}>
-                    <Link to={`/detail/${producto.id}`} className='link'>
+                    {esperando ? (
+                        <Espera/>
+                    ) : (
+                        <Link to={`/detail/${producto.id}`} className='link'>
                         <Item data={producto} />    
                     </Link>
-                    
+                    )}                    
                 </div>
             )
         })}

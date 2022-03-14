@@ -19,8 +19,6 @@ const Item = ({data}) => {
         addFav(data.id)
     }  
     
-   
-
   return (
     <div>
         <Card sx={{ maxWidth: 500 }} className="tarjetasCatalogo">
